@@ -1,59 +1,93 @@
-# FrontendAngular
+# VPS Monitor
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+VPS Monitor is a web application for monitoring and visualizing server performance and system metrics through a simple dashboard.
 
-## Development server
+The project was created as a practical full-stack development project, with the frontend providing a centralized interface for viewing server status, system resources and collected monitoring data.
 
-To start a local development server, run:
+> **Note:** This repository contains the frontend application. The backend and monitoring agent are maintained separately.
+
+## Features
+
+* Dashboard with an overview of monitored servers
+* Server status and availability
+* CPU, memory and disk usage
+* Network traffic and network statistics
+* Historical monitoring data
+* Server management
+* Responsive web interface
+* Visualization of monitoring metrics
+
+## Technologies
+
+* **Angular**
+* **TypeScript**
+* **HTML**
+* **CSS**
+* **Git / GitHub**
+
+## Project Structure
+
+The frontend is organized into reusable Angular components and services.
+
+```text
+src/
+├── app/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   └── ...
+├── assets/
+└── ...
+```
+
+## Running the Project
+
+### Prerequisites
+
+* Node.js
+* npm
+* Angular CLI
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/anejm/VPSmonitor_frontend.git
+cd VPSmonitor_frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+### Development server
+
+Start the Angular development server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The application will be available at:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Purpose
 
-```bash
-ng generate --help
-```
+The main purpose of the project is to gain practical experience with:
 
-## Building
+* Angular application development
+* REST API integration
+* frontend/backend communication
+* displaying and visualizing system metrics
+* component-based UI development
+* working with monitoring data
 
-To build the project run:
+## Status
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+The project is currently under development. New monitoring features and improvements to the user interface may be added over time.
