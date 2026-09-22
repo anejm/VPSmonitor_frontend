@@ -1,0 +1,134 @@
+<section class="dashboard">
+ 
+    <div class="section-header">
+        <div>
+            <h2>Dashboard</h2>
+            <p>Overview of your servers</p>
+        </div>
+    </div>
+ 
+ 
+    <!-- OVERVIEW -->
+ 
+    <section class="overview">
+ 
+        <div class="overview-cards">
+ 
+            <div class="overview-card">
+                <h3>Total Servers</h3>
+                <p> {{ totalServers }}</p>
+            </div>
+ 
+            <div class="overview-card">
+                <h3>Online</h3>
+                <p>{{ onlineServers }}</p>
+            </div>
+ 
+            <div class="overview-card">
+                <h3>Offline</h3>
+                <p>{{ offlineServers }}</p>
+            </div>
+ 
+            <div class="overview-card">
+                <h3>Alerts</h3>
+                <p>2</p>
+            </div>
+ 
+        </div>
+ 
+    </section>
+ 
+ 
+    <!-- SERVERS -->
+ 
+    <section class="servers">
+ 
+        <div class="section-header">
+            <div>
+                <h2>Servers</h2>server
+                <p>Your monitored servers</p>
+
+                <button class="add-server-button" routerLink="/servers/add">
+                    + Add Server
+                </button>
+            </div>
+ 
+            <a href="#">View all</a>
+        </div>
+ 
+        <div class="server-list">
+
+            <div class="server-card" *ngFor="let server of servers()">
+
+                <div class="server-info">
+                    <span
+                        class="server-status"
+                        [class]="server.status">
+                    </span>
+
+                    <h3>{{ server.name }}</h3>
+                </div>
+
+                <div class="server-metrics">
+
+                    CPU:
+                    {{ metrics()[server._id]?.cpu?.usage | number:'1.2-2' }}%
+
+                    RAM:
+                    {{ metrics()[server._id]?.memory?.usage | number:'1.2-2' }}%
+
+                </div>
+
+            </div>
+
+        </div>
+ 
+    </section>
+ 
+ 
+    <!-- ALERTS -->
+ 
+    <section class="alerts">
+ 
+        <div class="section-header">
+            <div>
+                <h2>Recent Alerts</h2>
+                <p>Latest server notifications</p>
+            </div>
+ 
+            <a routerLink="/notifications">
+                View all
+            </a>
+        </div>
+ 
+ 
+        <div class="alert-list">
+ 
+            <div class="alert">
+ 
+                <div class="alert-info">
+                    <h3>High CPU Usage</h3>
+                    <p>My VPS CPU usage exceeded 80%.</p>
+                </div>
+ 
+                <time>10 min ago</time>
+ 
+            </div>
+ 
+ 
+            <div class="alert">
+ 
+                <div class="alert-info">
+                    <h3>Disk Usage Warning</h3>
+                    <p>Web Server disk usage exceeded 75%.</p>
+                </div>
+ 
+                <time>1 hour ago</time>
+ 
+            </div>
+ 
+        </div>
+ 
+    </section>
+ 
+</section>

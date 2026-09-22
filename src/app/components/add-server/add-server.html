@@ -1,0 +1,68 @@
+<div class="add-server-page">
+
+    <h1>Add Server</h1>
+
+    <form (ngSubmit)="addServer()">
+
+        <div class="form-group">
+            <label for="name">Server name</label>
+
+            <input
+                id="name"
+                type="text"
+                [(ngModel)]="name"
+                name="name"
+                placeholder="My VPS"
+                required
+            >
+        </div>
+
+
+        <div class="form-group">
+            <label for="hostname">Hostname</label>
+
+            <input
+                id="hostname"
+                type="text"
+                [(ngModel)]="hostname"
+                name="hostname"
+                placeholder="srv1946706"
+                required
+            >
+        </div>
+
+
+        <div class="form-group">
+            <label for="ip">IP address</label>
+
+            <input
+                id="ip"
+                type="text"
+                [(ngModel)]="ip"
+                name="ip"
+                placeholder="10.8.0.1"
+                required
+            >
+        </div>
+
+
+        <div class="buttons">
+
+            <button
+                type="button"
+                routerLink="/"
+            >
+                Cancel
+            </button>
+
+            <button
+                type="submit"
+            >
+                Add Server
+            </button>
+
+        </div>
+
+    </form>
+
+</div>

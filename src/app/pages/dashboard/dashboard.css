@@ -1,0 +1,217 @@
+.page-header {
+margin-bottom: 35px;
+}
+ 
+.page-header h2 {
+margin: 0 0 8px;
+ 
+font-size: 30px;
+ 
+}
+ 
+.page-header p {
+margin: 0;
+ 
+color: #6b7280;
+ 
+}
+ 
+ 
+ 
+.overview {
+margin-bottom: 35px;
+}
+ 
+.overview > h2 {
+margin-bottom: 15px;
+}
+ 
+ 
+.overview-cards {
+display: grid;
+ 
+grid-template-columns: repeat(4, 1fr);
+ 
+gap: 20px;
+ 
+}
+ 
+.overview-card {
+padding: 22px;
+ 
+background-color: white;
+ 
+border: 1px solid #e5e7eb;
+border-radius: 10px;
+ 
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+ 
+}
+ 
+.overview-card h3 {
+margin: 0 0 15px;
+ 
+color: #6b7280;
+ 
+font-size: 14px;
+font-weight: normal;
+ 
+}
+ 
+.overview-card p {
+margin: 0;
+ 
+font-size: 28px;
+font-weight: bold;
+ 
+}
+ 
+ 
+.section-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+ 
+margin-bottom: 15px;
+ 
+}
+ 
+.section-header h2 {
+margin: 0;
+}
+ 
+.section-header a {
+color: #2563eb;
+text-decoration: underline;
+ 
+font-size: 14px;
+}
+.servers {
+margin-bottom: 35px;
+}
+ 
+.server-list {
+display: flex;
+flex-direction: column;
+ 
+gap: 12px;
+ 
+}
+ 
+.server-card {
+display: flex;
+justify-content: space-between;
+align-items: center;
+ 
+padding: 18px;
+ 
+background-color: white;
+ 
+border: 1px solid #e5e7eb;
+border-radius: 10px;
+ 
+min-width: 0;
+ 
+}
+ 
+.server-info {
+display: flex;
+align-items: center;
+gap: 10px;
+ 
+min-width: 0;
+ 
+}
+ 
+.server-info h3 {
+margin: 0;
+ 
+font-size: 15px;
+font-weight: 600;
+ 
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+ 
+}
+ 
+.server-status {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+flex-shrink: 0;
+ 
+background-color: #9ca3af;
+ 
+}
+ 
+.server-status.online {
+background-color: #22c55e;
+}
+ 
+.server-status.offline {
+background-color: #ef4444;
+}
+ 
+.server-status.warning {
+background-color: #f59e0b;
+}
+ 
+.server-metrics {
+display: flex;
+gap: 15px;
+flex-shrink: 0;
+ 
+color: #6b7280;
+font-size: 13px;
+ 
+}
+ 
+.alerts {
+margin-bottom: 35px;
+}
+ 
+.alert-list {
+display: flex;
+flex-direction: column;
+ 
+gap: 10px;
+ 
+}
+ 
+.alert {
+display: flex;
+justify-content: space-between;
+align-items: center;
+ 
+padding: 18px;
+ 
+background-color: white;
+ 
+border: 1px solid #e5e7eb;
+border-radius: 10px;
+ 
+}
+ 
+.alert-info h3 {
+margin: 0 0 5px;
+ 
+font-size: 15px;
+ 
+}
+ 
+.alert-info p {
+margin: 0;
+ 
+color: #6b7280;
+ 
+font-size: 14px;
+ 
+}
+ 
+.alert time {
+color: #9ca3af;
+ 
+font-size: 13px;
+ 
+}

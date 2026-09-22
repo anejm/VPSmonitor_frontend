@@ -1,0 +1,129 @@
+<section class="settings-section">
+
+    <div class="section-header">
+        <div>
+            <h2>Settings</h2>
+            <p>Configure your VPS Monitor</p>
+        </div>
+    </div>
+
+
+    <div class="profile-details">
+
+        <h2>General Settings</h2>
+
+
+        <div class="form-group">
+
+            <label for="refresh">
+                Refresh interval
+            </label>
+
+            <select id="refresh">
+
+                <option value="10">
+                    10 seconds
+                </option>
+
+                <option value="30">
+                    30 seconds
+                </option>
+
+                <option value="60">
+                    1 minute
+                </option>
+
+                <option value="300">
+                    5 minutes
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="notifications">
+                Notifications
+            </label>
+
+            <select id="notifications">
+
+                <option value="enabled">
+                    Enabled
+                </option>
+
+                <option value="disabled">
+                    Disabled
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button class="primary-button">
+            Save Settings
+        </button>
+
+    </div>
+
+
+    <div class="profile-details">
+
+        <h2>Server Monitoring</h2>
+
+
+        <div class="form-group">
+
+            <label for="cpu-threshold">
+                CPU alert threshold
+            </label>
+
+            <input
+                id="cpu-threshold"
+                type="number"
+                value="80"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="memory-threshold">
+                Memory alert threshold
+            </label>
+
+            <input
+                id="memory-threshold"
+                type="number"
+                value="80"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="disk-threshold">
+                Disk alert threshold
+            </label>
+
+            <input
+                id="disk-threshold"
+                type="number"
+                value="80"
+            >
+
+        </div>
+
+
+        <button class="primary-button">
+            Save Settings
+        </button>
+
+    </div>
+
+</section>
